@@ -3,13 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Purple+Purse&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Convergence&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@600;900&display=swap" rel="stylesheet">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <title>Tic-Tac-Toe</title>
 </head>
 <body>
-    <div class="container">
+    <div class="start-screen">
+        <label for="player1">Player <strong id="player1-x">X</strong> name:</label>
+        <input id="playerone" name="player1" type="text">
+        <label for="player2">Player <strong id="player2-o">O</strong> name:</label>
+        <input id="playertwo" name="player2" type="text">
+        <button type="button" id="start-btn">Start</button>
+    </div>
+        <div class="winmsg">
+            <h1 class="msg"></h1>
+            <button class="reset">Play Again</button>
+        </div>
+    <div class="container">        
         <div class="box" ></div>
         <div class="box" ></div>
         <div class="box" ></div>
