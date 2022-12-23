@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 1fr 1fr 1fr;
+ background-color: blueviolet;
+ width: 100vmin;
+ height: 80vmin;
+}
+
+
+
+.box{
+    background-color: aliceblue;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+
+}
+
+.x{
+    color: red;
+}
+
+.o{
+    color: green;
+}
+
