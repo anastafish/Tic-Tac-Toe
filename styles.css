@@ -86,11 +86,11 @@ body {
   color: white;
   align-self: center;
   font-family: "Purple Purse", cursive;
-  font-size: 45px;
+  font-size: 40px;
 }
 
 .reset, .restart {
-    font-family: ;
+  font-family: "Convergence", sans-serif;
   background-color: #6cb346;
   width: 100%;
   height: 100%;

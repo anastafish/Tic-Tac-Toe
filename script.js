@@ -24,7 +24,7 @@ const gameFactor = (name, mark, turn) => {
     return { content };
   })();
 
-  const Play = (boxes, player1, player2, Board) => {
+  const Play = (boxes, player1, player2, Board) => {    
     for (let i = 0; i < box.length; i++) {
       boxes[i].addEventListener("click", () => {
         if (player1.getTurn === true && boxes[i].textContent === "") {
@@ -39,7 +39,7 @@ const gameFactor = (name, mark, turn) => {
               ".msg"
             ).textContent = `${player1.getName} Won!`;
             document.querySelector(".winmsg").style.display = "flex";
-            document.querySelector(".winmsg").style.background = "red";                      
+            document.querySelector(".winmsg").style.background = "red";    
 
           }
           else if (checkTie(Board.Board)) {
@@ -146,17 +146,14 @@ const gameFactor = (name, mark, turn) => {
 };
 
 document.querySelector("#start-btn").addEventListener("click", () => {
-  const playerOne = document.querySelector("#playerone");
-  const playerTwo = document.querySelector("#playertwo");
-  const player1 = gameFactor(playerOne.value, "X", true);
-  const player2 = gameFactor(playerTwo.value, "O", false);
-  playerOne.value = ""
-  playerTwo.value = ""
-  gameFactor().render.content();
-  gameFactor().Play(boxArray, player1, player2, Board);  
+    playerOne = document.querySelector("#playerone");
+    playerTwo = document.querySelector("#playertwo");
+    let player1 = gameFactor(playerOne.value, "X", true);
+    let player2 = gameFactor(playerTwo.value, "O", false);   
+    gameFactor().render.content();
+    gameFactor().Play(boxArray, player1, player2, Board);
+    playerOne.value = "";
+    playerTwo.value = "";
+    
 });
-
 const Board = gameFactor().gameBoard;
-
-console.log(box)
-
